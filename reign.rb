@@ -30,7 +30,7 @@ class Reign < Formula
   # Reign CLI as a resource (open source, MIT licensed)
   resource "reign" do
     url "https://github.com/sovereynai/reign/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "500742f06b71e1a4a6c82f61ad55ef13e7636f9925d29deacf53b5d9499da47c"
+    sha256 "4d481e3de7639ce2de1950f3c031758c741ec0dc6c047ace721e2a37ea94250e"
   end
 
   depends_on "go" => :build  # For building reign from source
