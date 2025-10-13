@@ -10,20 +10,20 @@ class Reign < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.1/throne_darwin_arm64.tar.gz"
-      sha256 "763dc2dfae56b11b1aab5b5f07fa38bd35a7efbeae230a541f36e94739c1cc05"
+      sha256 "05cffa4c0ab2447eaa0a588aed0d077d47f954e29b82bbbd65cebbc9de34df09"
     else
       url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.1/throne_darwin_amd64.tar.gz"
-      sha256 "7d8a37d9415c761e06253a60052e50e340f54cd707e8ef6785506f412c3465d7"
+      sha256 "8ada28ebb809a3c57f4ccb41299d4e5190b8758aad6f9a567e07c35d177d0f4a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.1/throne_linux_arm64.tar.gz"
-      sha256 "ee52ffa7c3c5f1f4021131d50ce47d86f108b43e853b597a367c32ea2da7ee98"
+      sha256 "ec8df7672dad98ddf527809d5e5270bc6b669a60b970ee1a5af6176f7ecee92e"
     else
       url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.1/throne_linux_amd64.tar.gz"
-      sha256 "c17261444df02763df30ccbb22e3d101ed9599b57f1117614620f2b977b64fcb"
+      sha256 "4af4ca6e63a3b75d9b7dde648993178d8ed595bc32842dc4b372d84f969ea535"
     end
   end
 
