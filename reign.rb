@@ -5,24 +5,24 @@ class Reign < Formula
   desc "Sovereyn - Verifiable distributed intelligence network"
   homepage "https://github.com/sovereynai/throne"
   version "0.2.0"
-  license "Proprietary" # throne is proprietary, reign is MIT
+  license "MIT" # reign CLI is MIT, throne daemon is proprietary
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sovereynai/throne/releases/download/v0.2.0/throne_darwin_arm64.tar.gz"
+      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.0/throne_darwin_arm64.tar.gz"
       sha256 "14c9e1664be1c4cea2f9c55f00e623dc12adbb496fbe4e50c1884938b2d67dae"
     else
-      url "https://github.com/sovereynai/throne/releases/download/v0.2.0/throne_darwin_amd64.tar.gz"
+      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.0/throne_darwin_amd64.tar.gz"
       sha256 "064815721a143226aa727287345a588feb83216c6ef0cceb67baefdbf2e62442"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/sovereynai/throne/releases/download/v0.2.0/throne_linux_arm64.tar.gz"
+      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.0/throne_linux_arm64.tar.gz"
       sha256 "ef7446a1a8040360881928169d763b62325310b4c93f5311e36b5b5ad8eb5423"
     else
-      url "https://github.com/sovereynai/throne/releases/download/v0.2.0/throne_linux_amd64.tar.gz"
+      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.0/throne_linux_amd64.tar.gz"
       sha256 "3a3e2eb128e996d265a8abd6e58cfe7a4fc50d58259cf0c7d2af90b7198dee5e"
     end
   end
