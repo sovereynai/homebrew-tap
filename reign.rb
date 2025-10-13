@@ -4,33 +4,33 @@
 class Reign < Formula
   desc "Sovereyn - Verifiable distributed intelligence network"
   homepage "https://github.com/sovereynai/throne"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT" # reign CLI is MIT, throne daemon is proprietary
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.0/throne_darwin_arm64.tar.gz"
-      sha256 "14c9e1664be1c4cea2f9c55f00e623dc12adbb496fbe4e50c1884938b2d67dae"
+      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.1/throne_darwin_arm64.tar.gz"
+      sha256 "763dc2dfae56b11b1aab5b5f07fa38bd35a7efbeae230a541f36e94739c1cc05"
     else
-      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.0/throne_darwin_amd64.tar.gz"
-      sha256 "064815721a143226aa727287345a588feb83216c6ef0cceb67baefdbf2e62442"
+      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.1/throne_darwin_amd64.tar.gz"
+      sha256 "7d8a37d9415c761e06253a60052e50e340f54cd707e8ef6785506f412c3465d7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.0/throne_linux_arm64.tar.gz"
-      sha256 "ef7446a1a8040360881928169d763b62325310b4c93f5311e36b5b5ad8eb5423"
+      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.1/throne_linux_arm64.tar.gz"
+      sha256 "ee52ffa7c3c5f1f4021131d50ce47d86f108b43e853b597a367c32ea2da7ee98"
     else
-      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.0/throne_linux_amd64.tar.gz"
-      sha256 "3a3e2eb128e996d265a8abd6e58cfe7a4fc50d58259cf0c7d2af90b7198dee5e"
+      url "https://github.com/sovereynai/throne-releases/releases/download/v0.2.1/throne_linux_amd64.tar.gz"
+      sha256 "c17261444df02763df30ccbb22e3d101ed9599b57f1117614620f2b977b64fcb"
     end
   end
 
   # Reign CLI as a resource (open source, MIT licensed)
   resource "reign" do
-    url "https://github.com/sovereynai/reign/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "4d481e3de7639ce2de1950f3c031758c741ec0dc6c047ace721e2a37ea94250e"
+    url "https://github.com/sovereynai/reign/archive/refs/tags/v0.2.2.tar.gz"
+    sha256 "bd885fcfd749c91310f99fff426f8af741b31ed052d984f8d84003ee5cf08dc2"
   end
 
   depends_on "go" => :build  # For building reign from source
