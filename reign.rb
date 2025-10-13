@@ -4,7 +4,7 @@
 class Reign < Formula
   desc "Sovereyn - Verifiable distributed intelligence network"
   homepage "https://github.com/sovereynai/throne"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT" # reign CLI is MIT, throne daemon is proprietary
 
   on_macos do
@@ -29,8 +29,8 @@ class Reign < Formula
 
   # Reign CLI as a resource (open source, MIT licensed)
   resource "reign" do
-    url "https://github.com/sovereynai/reign/archive/refs/tags/v0.2.0.tar.gz"
-    sha256 "05c609d73e8082fcd38d552dda96c58361a8a08f951ce36ec0ea24ef2ae02c4e"
+    url "https://github.com/sovereynai/reign/archive/refs/tags/v0.2.1.tar.gz"
+    sha256 "500742f06b71e1a4a6c82f61ad55ef13e7636f9925d29deacf53b5d9499da47c"
   end
 
   depends_on "go" => :build  # For building reign from source
