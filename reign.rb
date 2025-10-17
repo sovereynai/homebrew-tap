@@ -29,8 +29,20 @@ class Reign < Formula
 
   def install
     # Install reign CLI binary
-    bin.install "reign_darwin_#{Hardware::CPU.arch}" => "reign" if OS.mac?
-    bin.install "reign_linux_#{Hardware::CPU.arch}" => "reign" if OS.linux?
+    # The downloaded filename uses the exact architecture string from the URL
+    if OS.mac?
+      if Hardware::CPU.arm?
+        bin.install "reign_darwin_arm64" => "reign"
+      else
+        bin.install "reign_darwin_amd64" => "reign"
+      end
+    elsif OS.linux?
+      if Hardware::CPU.arm?
+        bin.install "reign_linux_arm64" => "reign"
+      else
+        bin.install "reign_linux_amd64" => "reign"
+      end
+    end
   end
 
   test do
